@@ -215,7 +215,7 @@ namespace WpfApp1
             int lastPoint = filename.LastIndexOf(".");
 			if (lastPoint != 0)
 			{
-                string format = filename.Substring(lastPoint);
+                string format = filename.Substring(lastPoint).ToLower();
                 if (format.Equals(".jpg")
                     || format.Equals(".jpeg")
                     || format.Equals(".png")
